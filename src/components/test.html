@@ -1,0 +1,263 @@
+<div
+  class="g-gnav g-sm-modal"
+  id="g-gnav"
+  aria-hidden="false"
+  aria-modal="false"
+  aria-labelledby="g-gnav_h"
+  data-breakpoints="narrow"
+>
+  <div class="g-modal_backdrop">
+    <div class="g-modal_spacer"></div>
+    <div class="g-modal_el">
+      <header class="g-modal_head">
+        <p class="g-modal_h" id="g-gnav_h">メニュー</p>
+
+        <button
+          class="g-modal_close"
+          type="button"
+          aria-label="閉じる"
+          aria-expanded="true"
+          aria-controls="g-gnav"
+        >
+          <i class="g-i g-i-close" aria-hidden="true"></i>
+        </button>
+      </header>
+      <div class="g-gnav_outer">
+        <input type="hidden" id="ecUserId" value="" />
+        <input type="hidden" id="ecUsersKind" value="" />
+
+        <nav class="g-gnav_inner" aria-label="閉じる">
+          <ul class="g-gnav_bar g-gnav_login">
+            <li class="g-gnav_item">
+              <a id="js-header-login" class="g-btn g-btn-em" href="/ec/login"
+                ><span>ログイン</span></a
+              >
+            </li>
+            <li class="g-gnav_item">
+              <a
+                id="js-header-regis"
+                class="g-btn g-btn-cv"
+                href="/ec/login?unregistered"
+                ><span>新規会員登録</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="g-lineGrid-2 g-lineGrid-fw g-gnav_links">
+            <li class="g-lineGrid_item g-gnav_item">
+              <a class="g-gnav_btn" href="/ec/support/"
+                ><span
+                  ><i class="g-s g-s-faq" aria-hidden="true"></i>サポート</span
+                ></a
+              >
+            </li>
+            <li class="g-lineGrid_item g-gnav_item">
+              <a class="g-gnav_btn" href="/ec/History/"
+                ><span
+                  ><i class="g-s g-s-view" aria-hidden="true"></i>閲覧履歴</span
+                ></a
+              >
+            </li>
+          </ul>
+          <div class="g-gnav_category">
+            <button
+              class="g-gnav_btn g-gnav_categoryBtn"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="g-gcategory"
+              data-breakpoints="wide"
+              data-attr='{"wide":{"aria-haspopup":true}}'
+            >
+              <i class="g-s g-s-category" aria-hidden="true"></i>カテゴリ<i
+                class="g-i g-i-arrow-d"
+                aria-hidden="true"
+              ></i>
+            </button>
+            <div
+              class="g-gcategory"
+              id="g-gcategory"
+              aria-hidden="true"
+              data-breakpoints="wide"
+            >
+              <ul class="g-gcategory_el" data-accordion-group="">
+                <li class="g-gcategory_item">
+                  <div class="g-gcategory_head">
+                    <a
+                      class="g-gcategory_name"
+                      href="/ec/cat/Bed/"
+                      aria-expanded="false"
+                      aria-controls="g-gcategory_Bed"
+                      ><span
+                        ><img
+                          class="lozad"
+                          data-src="https://www.nitori-net.jp/ecstatic/image/sys-master/images/8993449607198/Bed.jpg"
+                          alt=""
+                          width="31"
+                          height="31"
+                        />ベッド</span
+                      ><i class="g-i g-i-arrow-d" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="g-gcategory_children"
+                    id="g-gcategory_Bed"
+                    aria-hidden="true"
+                  >
+                    <p class="g-gcategory_h">
+                      <a
+                        class="g-hover"
+                        onclick="categ('ベッド')"
+                        href="/ec/cat/Bed/"
+                        ><img
+                          class="lozad"
+                          data-src="https://www.nitori-net.jp/ecstatic/image/sys-master/images/8993449607198/Bed.jpg"
+                          alt=""
+                          width="120"
+                          height="120"
+                          src="https://www.nitori-net.jp/ecstatic/image/sys-master/images/8993449607198/Bed.jpg"
+                          data-loaded="true" />ベッド<i
+                          class="g-i g-i-arrow-r"
+                          aria-hidden="true"
+                        ></i
+                      ></a>
+                    </p>
+
+                    <p class="g-gcategory_more">
+                      <a href="/ec/cat/Bed/">
+                        <span>ベッド&nbsp;カテゴリを見る</span>
+                        <i class="g-i g-i-arrow-r" aria-hidden="true"></i>
+                      </a>
+                    </p>
+                    <ul class="g-gcategory_list">
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','すのこベッド')"
+                          href="/ec/cat/Bed/BedFrameDrainboard/1/"
+                          >すのこベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','収納付きベッド')"
+                          href="/ec/cat/Bed/BedFrameStorage/1/"
+                          >収納付きベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','ローベッド・フロアベッド')"
+                          href="/ec/cat/Bed/LowBedFloorBed/1/"
+                          >ローベッド・フロアベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','組み合わせベッド')"
+                          href="/ec/cat/Bed/f1bed-combine/1/"
+                          >組み合わせベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','パイプベッド')"
+                          href="/ec/cat/Bed/BedframePipeTatamiPipe/1/"
+                          >パイプベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','スタンダードベッド')"
+                          href="/ec/cat/Bed/BedFrameStandard/1/"
+                          >スタンダードベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','折りたたみベッド')"
+                          href="/ec/cat/Bed/BedFoldingElectricFolding/1/"
+                          >折りたたみベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','脚付きマットレス')"
+                          href="/ec/cat/Bed/BedFrameLegmattres/1/"
+                          >脚付きマットレス</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','ソファベッド')"
+                          href="/ec/cat/Bed/m1Sofabed/1/"
+                          >ソファベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','二段ベッド')"
+                          href="/ec/cat/Bed/BedBunkLoft/1/"
+                          >二段ベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','ロフトベッド')"
+                          href="/ec/cat/Bed/BedBunkLoftLoft/1/"
+                          >ロフトベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','介護ベッド・電動ベッド')"
+                          href="/ec/cat/Bed/BedFoldingElectricElectric/1/"
+                          >介護ベッド・電動ベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','畳ベッド')"
+                          href="/ec/cat/Bed/BedframePipeTatamiTatami/1/"
+                          >畳ベッド</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','サイドテーブル・ナイトテーブル')"
+                          href="/ec/cat/Bed/m1BedSideNightTable/1/"
+                          >サイドテーブル・ナイトテーブル</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          onclick="categ2('ベッド','ベッドその他')"
+                          href="/ec/cat/Bed/BedOther/1/"
+                          >ベッドその他</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="g-modal_spacer"></div>
+  </div>
+</div>
