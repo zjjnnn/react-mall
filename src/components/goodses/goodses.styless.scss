@@ -1,0 +1,54 @@
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+.recommend-goodses {
+  margin-top: 10px;
+  width: 800px;
+
+  .g-h2 {
+    font-size: 1.2rem;
+  }
+  .goodses-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+}
+
+.goods-container {
+  padding-top: 0;
+  width: 140px;
+  &:hover {
+    cursor: pointer;
+
+    & .goods-img {
+      opacity: 0.8;
+    }
+    & a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.goods-name {
+  margin: 5px 0;
+  font-size: 0.7rem;
+  line-height: 1.1;
+  height: 30px;
+}
+
+.goods-price-container {
+  margin-top: 15px;
+
+  .goods-price {
+    font-weight: bold;
+
+    span {
+      font-weight: normal;
+      font-size: 0.8rem;
+    }
+  }
+}
