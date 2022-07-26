@@ -2,7 +2,7 @@ import SubDropdown from "./SubDropdown";
 import { useState } from "react";
 import "./menu-demo.styles.css";
 
-const MenuItemss = ({ subItem, depthLevel }) => {
+const MenuItemss = ({ subItem, depthLevel, dropdown, setDropdown }) => {
   const [subDropdown, setSubDropdown] = useState(false);
   return (
     <li className="menu-items" onMouseLeave={() => setSubDropdown(false)}>
@@ -18,9 +18,11 @@ const MenuItemss = ({ subItem, depthLevel }) => {
       <SubDropdown
         categoryName={subItem.categoryName}
         submenus={subItem.secondLevelCategoryVOS}
-        dropdown={subDropdown}
-        setDropdown={setSubDropdown}
+        subDropdown={subDropdown}
+        setSubDropdown={setSubDropdown}
         depthLevel={depthLevel}
+        dropdown={dropdown}
+        setDropdown={setDropdown}
       />
     </li>
   );
